@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="./img/tu.jpg" alt="TuringUnion logo" width="120" />
+  <img src="./img/logo-symbol.png" alt="TuringUnion logo symbol" width="120" />
+  <img src="./img/logo-mascot.png" alt="TuringUnion mascot" height="120" />
   <h1>图灵学社 TuringUnion</h1>
   <p><strong>One Learner, One University.</strong></p>
   <p>
