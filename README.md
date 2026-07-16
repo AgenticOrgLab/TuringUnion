@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="./img/logo-symbol.png" alt="TuringUnion logo symbol" width="120" />
-  <h1><img src="./img/logo-mascot.png" alt="TuringUnion mascot" height="64" /> 图灵学社 TuringUnion</h1>
+  <img src="./img/logo-symbol-fancy.png" alt="TuringUnion logo symbol" width="120" />
+  <h1><img src="./img/logo-mascot-fancy.png" alt="TuringUnion mascot" height="64" /> 图灵学社 TuringUnion</h1>
   <p><strong>One Learner, One University.</strong></p>
   <p>
     <a href="https://www.turingu.cn"><img alt="University Website" src="https://img.shields.io/badge/University-turingu.cn-009688?style=flat-square"></a>
@@ -57,7 +57,7 @@ Every conversation, answer, exercise, project submission, and feedback signal en
 TuringUnion follows a three-stage framework: intelligent cognition, intelligent cultivation, and intelligent verification. The system first models learner goals, capability estimates, feedback, and task constraints as a dynamic human node. It then organizes learning through personalized cultivation plans, multi-agent mentor teams, and interactive dynamic classrooms, and finally validates real capability through enterprise-grade project training and learning evidence modeling.
 
 <p align="center">
-  <img src="./img/method.jpg" alt="TuringUnion framework" width="100%">
+  <img src="./img/method-fancy.png" alt="TuringUnion framework" width="100%">
 </p>
 
 ### 🤖 Core Modules
@@ -109,7 +109,7 @@ TuringUnion has completed an initial real-user test with 22 learners across unde
 #### 📈 Learning Outcome
 
 <p align="center">
-  <img src="./img/outcome.png" alt="Learning outcome evaluation" width="100%">
+  <img src="./img/outcome-fancy.png" alt="Learning outcome evaluation" width="100%">
 </p>
 
 Preliminary results show:
@@ -121,7 +121,7 @@ Preliminary results show:
 #### 🔄 Process Validation
 
 <p align="center">
-  <img src="./img/process.png" alt="Learning process validation" width="100%">
+  <img src="./img/process-fancy.png" alt="Learning process validation" width="100%">
 </p>
 
 The test provides initial validation for the “test—learn—test—practice” loop. The system can adjust learning paths based on testing and learning behavior, while accumulating traceable growth records.
@@ -135,7 +135,7 @@ The test provides initial validation for the “test—learn—test—practice�
 TU0024 represents a beginner learner with limited AI and product experience but strong willingness to learn. TuringUnion starts with a clear path, structured courses, and enterprise-level practice to build foundational capability and deliver measurable progress.
 
 <p align="center">
-  <img src="./img/新手探索.png" alt="TU0024 beginner exploration case study" width="100%">
+  <img src="./img/新手探索-fancy.png" alt="TU0024 beginner exploration case study" width="100%">
 </p>
 
 #### Advanced Research Profile
@@ -143,7 +143,7 @@ TU0024 represents a beginner learner with limited AI and product experience but 
 TU013 represents an advanced learner with research foundations and prior AI project experience. TuringUnion fills knowledge gaps around the learner’s research goals and supports deeper practice through multi-agent collaboration and quantitative evaluation.
 
 <p align="center">
-  <img src="./img/进阶研究.png" alt="TU013 advanced research case study" width="100%">
+  <img src="./img/进阶研究-fancy.png" alt="TU013 advanced research case study" width="100%">
 </p>
 
 #### Cross-Case Comparison
@@ -151,7 +151,7 @@ TU013 represents an advanced learner with research foundations and prior AI proj
 The two learners started from different baselines, yet both reached scores above 84 after learning. The beginner learner improved by 45.0 points, while the advanced learner improved by 24.5 points, indicating that the system adapts cultivation to different learner profiles.
 
 <p align="center">
-  <img src="./img/case对比图.png" alt="Before and after case study comparison" width="100%">
+  <img src="./img/case对比图-fancy.png" alt="Before and after case study comparison" width="100%">
 </p>
 
 ### 🚀 Application Value
