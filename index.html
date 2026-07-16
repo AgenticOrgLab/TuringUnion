@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TuringUnion Demo Videos</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #071426;
+        color: #f4f8ff;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #123b68 0, #071426 55%, #040a13 100%);
+      }
+
+      .page {
+        width: min(1180px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 48px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+
+      .brand-symbol { width: 68px; height: 62px; object-fit: contain; }
+      .brand-mascot { width: 58px; height: 72px; object-fit: contain; }
+      h1 { margin: 0; font-size: clamp(1.7rem, 4vw, 3rem); letter-spacing: -0.04em; }
+      .subtitle { margin: 5px 0 0; color: #a9c5e8; }
+
+      .stage {
+        overflow: hidden;
+        border: 1px solid rgba(164, 207, 255, 0.22);
+        border-radius: 24px;
+        background: rgba(3, 12, 25, 0.7);
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #02060c;
+        object-fit: contain;
+      }
+
+      .caption {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 18px 22px 20px;
+      }
+
+      .caption h2 { margin: 0; font-size: clamp(1.1rem, 2vw, 1.5rem); }
+      .caption p { margin: 5px 0 0; color: #9fb6d3; }
+
+      .controls { display: flex; gap: 8px; }
+      button {
+        width: 42px;
+        height: 42px;
+        border: 1px solid rgba(164, 207, 255, 0.3);
+        border-radius: 50%;
+        background: #12345a;
+        color: white;
+        cursor: pointer;
+        font-size: 1.1rem;
+      }
+      button:hover { background: #1d548c; }
+
+      .dots {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+      .dot {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border: 0;
+        background: #47627f;
+      }
+      .dot.active { background: #62c8ff; box-shadow: 0 0 14px #62c8ff; }
+
+      @media (max-width: 640px) {
+        .page { width: min(100% - 20px, 1180px); padding-top: 18px; }
+        .brand { gap: 9px; }
+        .brand-symbol { width: 48px; height: 46px; }
+        .brand-mascot { width: 42px; height: 54px; }
+        .caption { align-items: flex-start; flex-direction: column; padding: 15px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="brand">
+        <img class="brand-symbol" src="img/logo-symbol.png" alt="TuringUnion logo" />
+        <img class="brand-mascot" src="img/logo-mascot.png" alt="TuringUnion mascot" />
+        <div>
+          <h1>TuringUnion</h1>
+          <p class="subtitle">One Learner, One University.</p>
+        </div>
+      </header>
+
+      <section class="stage" aria-label="TuringUnion demo video carousel">
+        <video id="player" autoplay muted loop playsinline controls preload="auto"></video>
+        <div class="caption">
+          <div>
+            <h2 id="title"></h2>
+            <p id="counter"></p>
+          </div>
+          <div class="controls">
+            <button id="previous" type="button" aria-label="Previous video">‹</button>
+            <button id="next" type="button" aria-label="Next video">›</button>
+          </div>
+        </div>
+      </section>
+      <nav id="dots" class="dots" aria-label="Choose a demo video"></nav>
+    </main>
+
+    <script>
+      const videos = [
+        ["Conversational Learner Profiling", "videos/user-profile-modeling.mp4"],
+        ["Personalized Cultivation Plan", "videos/personalized-path.mp4"],
+        ["Multi-Agent Mentor Team", "videos/multi-agent-mentors.mp4"],
+        ["Interactive Dynamic Classroom", "videos/dynamic-classroom.mp4"],
+        ["Enterprise-Level Project Training", "videos/enterprise-project.mp4"]
+      ];
+      const player = document.querySelector("#player");
+      const title = document.querySelector("#title");
+      const counter = document.querySelector("#counter");
+      const dots = document.querySelector("#dots");
+      let current = 0;
+
+      function showVideo(index) {
+        current = (index + videos.length) % videos.length;
+        const [name, source] = videos[current];
+        player.src = source;
+        player.load();
+        player.play().catch(() => {});
+        title.textContent = name;
+        counter.textContent = `${current + 1} / ${videos.length}`;
+        [...dots.children].forEach((dot, dotIndex) => dot.classList.toggle("active", dotIndex === current));
+      }
+
+      videos.forEach((_, index) => {
+        const dot = document.createElement("button");
+        dot.className = "dot";
+        dot.type = "button";
+        dot.setAttribute("aria-label", `Show video ${index + 1}`);
+        dot.addEventListener("click", () => showVideo(index));
+        dots.appendChild(dot);
+      });
+
+      document.querySelector("#previous").addEventListener("click", () => showVideo(current - 1));
+      document.querySelector("#next").addEventListener("click", () => showVideo(current + 1));
+      showVideo(0);
+      setInterval(() => showVideo(current + 1), 12000);
+    </script>
+  </body>
+</html>
