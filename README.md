@@ -18,7 +18,7 @@
   </p>
 </div>
 
-<video src="./videos/图灵大学宣传片.MOV" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/图灵大学宣传片.MOV" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 ---
 
@@ -102,23 +102,23 @@
 
 #### 对话式画像建模 / Conversational Learner Profiling
 
-<video src="./videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 #### 个性化培养方案 / Personalized Cultivation Plan
 
-<video src="./videos/personalized-path.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/personalized-path.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 #### 多智能体导师团 / Multi-Agent Mentor Team
 
-<video src="./videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 #### 交互式动态课堂 / Interactive Dynamic Classroom
 
-<video src="./videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 #### 企业级项目实训 / Enterprise-Level Project Training
 
-<video src="./videos/enterprise-project.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/enterprise-project.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 <a id="evaluation"></a>
 
@@ -287,23 +287,23 @@ Enterprise-level project training connects learning with real industry needs. Th
 
 #### Conversational Learner Profiling
 
-<video src="./videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 #### Personalized Cultivation Plan
 
-<video src="./videos/personalized-path.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/personalized-path.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 #### Multi-Agent Mentor Team
 
-<video src="./videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 #### Interactive Dynamic Classroom
 
-<video src="./videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 #### Enterprise-Level Project Training
 
-<video src="./videos/enterprise-project.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/enterprise-project.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 ### Evaluation
 
