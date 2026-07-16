@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./frontend/public/icon/tu.jpg" alt="TuringUnion logo" width="120" />
+  <img src="./img/tu.jpg" alt="TuringUnion logo" width="120" />
   <h1>图灵学社 TuringUnion</h1>
   <p><strong>One Learner, One University.</strong></p>
   <p>
@@ -18,7 +18,7 @@
   </p>
 </div>
 
-<video src="./readme/videos/图灵大学宣传片.MOV" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/图灵大学宣传片.MOV" autoplay muted loop playsinline controls width="100%"></video>
 
 ---
 
@@ -66,7 +66,7 @@
 图灵学社采用“智能认知—智能培养—智能验证”的三段式框架。系统首先将学习者目标、能力、反馈和任务约束建模为动态人类节点，再通过个性化培养方案、多智能体导师团和交互式动态课堂组织学习过程，最后以企业级项目实训和学习证据建模验证真实能力，并将结果反馈给路径优化模块。
 
 <p align="center">
-  <img src="./readme/img/method.jpg" alt="TuringUnion framework" width="100%">
+  <img src="./img/method.jpg" alt="TuringUnion framework" width="100%">
 </p>
 
 ### 核心模块
@@ -99,23 +99,23 @@
 
 #### 对话式画像建模 / Conversational Learner Profiling
 
-<video src="./readme/videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 #### 个性化培养方案 / Personalized Cultivation Plan
 
-<video src="./readme/videos/personalized-path.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/personalized-path.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 #### 多智能体导师团 / Multi-Agent Mentor Team
 
-<video src="./readme/videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 #### 交互式动态课堂 / Interactive Dynamic Classroom
 
-<video src="./readme/videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 #### 企业级项目实训 / Enterprise-Level Project Training
 
-<video src="./readme/videos/enterprise-project.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/enterprise-project.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 <a id="evaluation"></a>
 
@@ -126,7 +126,7 @@
 #### 学习结果
 
 <p align="center">
-  <img src="./readme/img/outcome.png" alt="Learning outcome evaluation" width="100%">
+  <img src="./img/outcome.png" alt="Learning outcome evaluation" width="100%">
 </p>
 
 初步结果显示：
@@ -138,7 +138,7 @@
 #### 过程验证
 
 <p align="center">
-  <img src="./readme/img/process.png" alt="Learning process validation" width="100%">
+  <img src="./img/process.png" alt="Learning process validation" width="100%">
 </p>
 
 测试验证了“测—学—测—练”的学习闭环：系统可以基于测试和学习行为持续调整路径，并将学习过程沉淀为可追踪的成长记录。
@@ -152,7 +152,7 @@
 TU0024 代表缺少 AI 和产品经验、但具备持续学习意愿的新手学习者。系统从清晰路径、完整课程和企业级实践切入，帮助其建立基础能力并完成阶段性提升。
 
 <p align="center">
-  <img src="./readme/img/新手探索.png" alt="TU0024 beginner exploration case study" width="100%">
+  <img src="./img/新手探索.png" alt="TU0024 beginner exploration case study" width="100%">
 </p>
 
 #### 进阶研究型学员
@@ -160,7 +160,7 @@ TU0024 代表缺少 AI 和产品经验、但具备持续学习意愿的新手学
 TU013 代表具备研究基础和 AI 项目经验的进阶学习者。系统围绕其研究目标补齐知识结构，并通过多智能体协作和量化评估支持更深入的实践。
 
 <p align="center">
-  <img src="./readme/img/进阶研究.png" alt="TU013 advanced research case study" width="100%">
+  <img src="./img/进阶研究.png" alt="TU013 advanced research case study" width="100%">
 </p>
 
 #### 学员对比结果
@@ -168,7 +168,7 @@ TU013 代表具备研究基础和 AI 项目经验的进阶学习者。系统围�
 两类学习者的起点不同，但学习后成绩均达到 84 分以上；新手学员提升 45.0 分，进阶学员提升 24.5 分，说明系统能够根据不同基础提供有效的个性化培养。
 
 <p align="center">
-  <img src="./readme/img/case对比图.png" alt="Before and after case study comparison" width="100%">
+  <img src="./img/case对比图.png" alt="Before and after case study comparison" width="100%">
 </p>
 
 ### 应用价值
@@ -250,7 +250,7 @@ Every conversation, answer, exercise, project submission, and feedback signal en
 TuringUnion follows a three-stage framework: intelligent cognition, intelligent cultivation, and intelligent verification. The system first models learner goals, capability estimates, feedback, and task constraints as a dynamic human node. It then organizes learning through personalized cultivation plans, multi-agent mentor teams, and interactive dynamic classrooms, and finally validates real capability through enterprise-grade project training and learning evidence modeling.
 
 <p align="center">
-  <img src="./readme/img/method.jpg" alt="TuringUnion framework" width="100%">
+  <img src="./img/method.jpg" alt="TuringUnion framework" width="100%">
 </p>
 
 ### Core Modules
@@ -281,23 +281,23 @@ Enterprise-level project training connects learning with real industry needs. Th
 
 #### Conversational Learner Profiling
 
-<video src="./readme/videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 #### Personalized Cultivation Plan
 
-<video src="./readme/videos/personalized-path.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/personalized-path.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 #### Multi-Agent Mentor Team
 
-<video src="./readme/videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 #### Interactive Dynamic Classroom
 
-<video src="./readme/videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 #### Enterprise-Level Project Training
 
-<video src="./readme/videos/enterprise-project.mp4" autoplay muted loop playsinline controls width="100%"></video>
+<video src="./videos/enterprise-project.mp4" autoplay muted loop playsinline controls width="100%"></video>
 
 ### Evaluation
 
@@ -306,7 +306,7 @@ TuringUnion has completed an initial real-user test with 22 learners across unde
 #### Learning Outcome
 
 <p align="center">
-  <img src="./readme/img/outcome.png" alt="Learning outcome evaluation" width="100%">
+  <img src="./img/outcome.png" alt="Learning outcome evaluation" width="100%">
 </p>
 
 Preliminary results show:
@@ -318,7 +318,7 @@ Preliminary results show:
 #### Process Validation
 
 <p align="center">
-  <img src="./readme/img/process.png" alt="Learning process validation" width="100%">
+  <img src="./img/process.png" alt="Learning process validation" width="100%">
 </p>
 
 The test provides initial validation for the “test—learn—test—practice” loop. The system can adjust learning paths based on testing and learning behavior, while accumulating traceable growth records.
@@ -332,7 +332,7 @@ The test provides initial validation for the “test—learn—test—practice�
 TU0024 represents a beginner learner with limited AI and product experience but strong willingness to learn. TuringUnion starts with a clear path, structured courses, and enterprise-level practice to build foundational capability and deliver measurable progress.
 
 <p align="center">
-  <img src="./readme/img/新手探索.png" alt="TU0024 beginner exploration case study" width="100%">
+  <img src="./img/新手探索.png" alt="TU0024 beginner exploration case study" width="100%">
 </p>
 
 #### Advanced Research Profile
@@ -340,7 +340,7 @@ TU0024 represents a beginner learner with limited AI and product experience but 
 TU013 represents an advanced learner with research foundations and prior AI project experience. TuringUnion fills knowledge gaps around the learner’s research goals and supports deeper practice through multi-agent collaboration and quantitative evaluation.
 
 <p align="center">
-  <img src="./readme/img/进阶研究.png" alt="TU013 advanced research case study" width="100%">
+  <img src="./img/进阶研究.png" alt="TU013 advanced research case study" width="100%">
 </p>
 
 #### Cross-Case Comparison
@@ -348,7 +348,7 @@ TU013 represents an advanced learner with research foundations and prior AI proj
 The two learners started from different baselines, yet both reached scores above 84 after learning. The beginner learner improved by 45.0 points, while the advanced learner improved by 24.5 points, indicating that the system adapts cultivation to different learner profiles.
 
 <p align="center">
-  <img src="./readme/img/case对比图.png" alt="Before and after case study comparison" width="100%">
+  <img src="./img/case对比图.png" alt="Before and after case study comparison" width="100%">
 </p>
 
 ### Application Value
