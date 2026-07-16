@@ -14,7 +14,7 @@
     <a href="https://github.com/ffcosmos/AgentUniversity"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ffcosmos/AgentUniversity?style=social"></a>
   </p>
   <p>
-    <a href="#中文">中文</a> | <a href="#english">English</a>
+    <a href="#english">English</a> | <a href="#中文">中文</a>
   </p>
 </div>
 
@@ -29,6 +29,9 @@
 ---
 
 <a id="中文"></a>
+
+<details>
+<summary>中文</summary>
 
 ### 项目概述
 
@@ -212,6 +215,7 @@ TU013 代表具备研究基础和 AI 项目经验的进阶学习者。系统围�
 - Issues：<https://github.com/ffcosmos/AgentUniversity/issues>
 - 邮箱：即将开放。
 
+</details>
 
 
 ---
