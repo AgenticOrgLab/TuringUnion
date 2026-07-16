@@ -3,14 +3,8 @@
   <h1><img src="./img/logo-mascot.png" alt="TuringUnion mascot" height="64" /> 图灵学社 TuringUnion</h1>
   <p><strong>One Learner, One University.</strong></p>
   <p>
-    <a href="https://turingu.cn/campus"><img alt="校园" src="https://img.shields.io/badge/校园-turingu.cn-009688?style=flat-square"></a>
-    <a href="#framework"><img alt="系统框架" src="https://img.shields.io/badge/系统-框架-2563eb?style=flat-square"></a>
+    <a href="https://www.turingu.cn"><img alt="大学官网" src="https://img.shields.io/badge/大学官网-turingu.cn-009688?style=flat-square"></a>
     <a href="https://ffcosmos.github.io/TuringUnion/"><img alt="演示视频" src="https://img.shields.io/badge/演示-观看视频-4c6fff?style=flat-square"></a>
-    <a href="#evaluation"><img alt="数据验证" src="https://img.shields.io/badge/评测-结果-7c3aed?style=flat-square"></a>
-    <a href="#case-studies"><img alt="案例研究" src="https://img.shields.io/badge/案例-研究-0ea5e9?style=flat-square"></a>
-    <a href="#contributors"><img alt="贡献者" src="https://img.shields.io/badge/贡献者-欢迎参与-2ea44f?style=flat-square"></a>
-    <a href="#contact"><img alt="联系我们" src="https://img.shields.io/badge/联系-项目团队-111827?style=flat-square"></a>
-    <a href="https://github.com/ffcosmos/AgentUniversity"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ffcosmos/AgentUniversity?style=social"></a>
   </p>
   <p>
     <a href="./README.md">English</a> | <strong>中文</strong>
