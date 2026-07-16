@@ -1,7 +1,6 @@
 <div align="center">
   <img src="./img/logo-symbol.png" alt="TuringUnion logo symbol" width="120" />
-  <img src="./img/logo-mascot.png" alt="TuringUnion mascot" height="120" />
-  <h1>图灵学社 TuringUnion</h1>
+  <h1><img src="./img/logo-mascot.png" alt="TuringUnion mascot" height="64" /> 图灵学社 TuringUnion</h1>
   <p><strong>One Learner, One University.</strong></p>
   <p>
     <a href="https://turingu.cn/campus"><img alt="Campus" src="https://img.shields.io/badge/Campus-turingu.cn-009688?style=flat-square"></a>
