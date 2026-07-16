@@ -180,7 +180,18 @@ TU013 代表具备研究基础和 AI 项目经验的进阶学习者。系统围�
 
 ## 👥 贡献者
 
-<a href="https://github.com/ffcosmos"><img src="https://github.com/ffcosmos.png?size=96" width="96" alt="ffcosmos" /></a>
+<p>
+  <a href="https://github.com/ffcosmos"><img src="https://github.com/ffcosmos.png?size=96" width="72" alt="ffcosmos" /></a>
+  <a href="https://github.com/lonelyness1"><img src="https://github.com/lonelyness1.png?size=96" width="72" alt="lonelyness1" /></a>
+  <a href="https://github.com/WilsonWukz"><img src="https://github.com/WilsonWukz.png?size=96" width="72" alt="WilsonWukz" /></a>
+  <a href="https://github.com/TL-Z"><img src="https://github.com/TL-Z.png?size=96" width="72" alt="TL-Z" /></a>
+  <a href="https://github.com/RedRoman"><img src="https://github.com/RedRoman.png?size=96" width="72" alt="RedRoman" /></a>
+  <a href="https://github.com/Deep-Octopus"><img src="https://github.com/Deep-Octopus.png?size=96" width="72" alt="Deep-Octopus" /></a>
+  <a href="https://github.com/turingw1"><img src="https://github.com/turingw1.png?size=96" width="72" alt="turingw1" /></a>
+  <a href="https://github.com/yixuanzhou823-droid"><img src="https://github.com/yixuanzhou823-droid.png?size=96" width="72" alt="yixuanzhou823-droid" /></a>
+  <a href="https://github.com/xdedmyyds"><img src="https://github.com/xdedmyyds.png?size=96" width="72" alt="xdedmyyds" /></a>
+  <a href="https://github.com/Nahtreom"><img src="https://github.com/Nahtreom.png?size=96" width="72" alt="Nahtreom" /></a>
+</p>
 
 ## 📬 联系我们
 
@@ -335,7 +346,18 @@ TuringUnion targets personalized talent cultivation, AI education platforms, ent
 
 ## 👥 Contributors
 
-<a href="https://github.com/ffcosmos"><img src="https://github.com/ffcosmos.png?size=96" width="96" alt="ffcosmos" /></a>
+<p>
+  <a href="https://github.com/ffcosmos"><img src="https://github.com/ffcosmos.png?size=96" width="72" alt="ffcosmos" /></a>
+  <a href="https://github.com/lonelyness1"><img src="https://github.com/lonelyness1.png?size=96" width="72" alt="lonelyness1" /></a>
+  <a href="https://github.com/WilsonWukz"><img src="https://github.com/WilsonWukz.png?size=96" width="72" alt="WilsonWukz" /></a>
+  <a href="https://github.com/TL-Z"><img src="https://github.com/TL-Z.png?size=96" width="72" alt="TL-Z" /></a>
+  <a href="https://github.com/RedRoman"><img src="https://github.com/RedRoman.png?size=96" width="72" alt="RedRoman" /></a>
+  <a href="https://github.com/Deep-Octopus"><img src="https://github.com/Deep-Octopus.png?size=96" width="72" alt="Deep-Octopus" /></a>
+  <a href="https://github.com/turingw1"><img src="https://github.com/turingw1.png?size=96" width="72" alt="turingw1" /></a>
+  <a href="https://github.com/yixuanzhou823-droid"><img src="https://github.com/yixuanzhou823-droid.png?size=96" width="72" alt="yixuanzhou823-droid" /></a>
+  <a href="https://github.com/xdedmyyds"><img src="https://github.com/xdedmyyds.png?size=96" width="72" alt="xdedmyyds" /></a>
+  <a href="https://github.com/Nahtreom"><img src="https://github.com/Nahtreom.png?size=96" width="72" alt="Nahtreom" /></a>
+</p>
 
 ## 📬 Contact
 
