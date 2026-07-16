@@ -184,7 +184,5 @@ TuringUnion targets personalized talent cultivation, AI education platforms, ent
 
 ## 📬 Contact
 
-- Campus: <https://turingu.cn/campus>
-- GitHub: <https://github.com/ffcosmos/AgentUniversity>
-- Issues: <https://github.com/ffcosmos/AgentUniversity/issues>
-- Email: Coming soon.
+- Website: <https://www.turingu.cn>
+- Email: <qianc62@gmail.com> / <aohan510@gmail.com>
