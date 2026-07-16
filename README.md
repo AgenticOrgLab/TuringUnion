@@ -88,18 +88,6 @@ Enterprise-level project training connects learning with real industry needs. Th
 
 Watch the promotional film and featured demos on the [video carousel site](https://ffcosmos.github.io/TuringUnion/), or browse all files in the [videos folder](https://github.com/ffcosmos/TuringUnion/tree/main/videos).
 
-#### Conversational Learner Profiling
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
-#### Personalized Cultivation Plan
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/personalized-path.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
-#### Interactive Dynamic Classroom
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
 ### 📊 Evaluation
 
 Participants: 22 undergraduate, master’s, and doctoral learners with some AI learning background but generally limited product analysis experience. Their learning goal was to grow into multi-agent product analysts.

@@ -92,18 +92,6 @@
 
 在[视频轮播网站](https://ffcosmos.github.io/TuringUnion/)观看宣传片和精选 Demo，或前往 [videos 文件夹](https://github.com/ffcosmos/TuringUnion/tree/main/videos)查看全部视频。
 
-#### 对话式画像建模
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
-#### 个性化培养方案
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/personalized-path.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
-#### 交互式动态课堂
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
 <a id="evaluation"></a>
 
 ### 📊 数据验证
