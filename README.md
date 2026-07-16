@@ -5,7 +5,7 @@
   <p>
     <a href="https://turingu.cn/campus"><img alt="Campus" src="https://img.shields.io/badge/Campus-turingu.cn-009688?style=flat-square"></a>
     <a href="#framework"><img alt="Framework" src="https://img.shields.io/badge/Framework-System-2563eb?style=flat-square"></a>
-    <a href="#demo-videos"><img alt="Demo Videos" src="https://img.shields.io/badge/Demo-Videos-4c6fff?style=flat-square"></a>
+    <a href="https://ffcosmos.github.io/TuringUnion/"><img alt="Demo Videos" src="https://img.shields.io/badge/Demo-Watch%20Videos-4c6fff?style=flat-square"></a>
     <a href="#evaluation"><img alt="Evaluation" src="https://img.shields.io/badge/Evaluation-Results-7c3aed?style=flat-square"></a>
     <a href="#case-studies"><img alt="Case Studies" src="https://img.shields.io/badge/Case-Studies-0ea5e9?style=flat-square"></a>
     <a href="#whats-new"><img alt="What's New" src="https://img.shields.io/badge/What%27s-New-ff6f3c?style=flat-square"></a>
