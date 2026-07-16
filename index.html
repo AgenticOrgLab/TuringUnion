@@ -84,6 +84,20 @@
         gap: 8px;
         margin-top: 18px;
       }
+
+      .more {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 22px;
+        padding: 11px 16px;
+        border: 1px solid rgba(164, 207, 255, 0.3);
+        border-radius: 999px;
+        color: #d8ebff;
+        background: rgba(18, 52, 90, 0.75);
+        text-decoration: none;
+      }
+      .more:hover { background: #1d548c; }
+
       .dot {
         width: 10px;
         height: 10px;
@@ -114,7 +128,7 @@
       </header>
 
       <section class="stage" aria-label="TuringUnion demo video carousel">
-        <video id="player" autoplay muted loop playsinline controls preload="auto"></video>
+        <video id="player" autoplay muted playsinline controls preload="auto"></video>
         <div class="caption">
           <div>
             <h2 id="title"></h2>
@@ -127,15 +141,15 @@
         </div>
       </section>
       <nav id="dots" class="dots" aria-label="Choose a demo video"></nav>
+      <a class="more" href="https://github.com/ffcosmos/TuringUnion/tree/main/videos">View all videos on GitHub →</a>
     </main>
 
     <script>
       const videos = [
+        ["TuringUnion Promotional Film", "videos/turingunion-promo.mp4"],
         ["Conversational Learner Profiling", "videos/user-profile-modeling.mp4"],
         ["Personalized Cultivation Plan", "videos/personalized-path.mp4"],
-        ["Multi-Agent Mentor Team", "videos/multi-agent-mentors.mp4"],
-        ["Interactive Dynamic Classroom", "videos/dynamic-classroom.mp4"],
-        ["Enterprise-Level Project Training", "videos/enterprise-project.mp4"]
+        ["Interactive Dynamic Classroom", "videos/dynamic-classroom.mp4"]
       ];
       const player = document.querySelector("#player");
       const title = document.querySelector("#title");
@@ -165,8 +179,8 @@
 
       document.querySelector("#previous").addEventListener("click", () => showVideo(current - 1));
       document.querySelector("#next").addEventListener("click", () => showVideo(current + 1));
+      player.addEventListener("ended", () => showVideo(current + 1));
       showVideo(0);
-      setInterval(() => showVideo(current + 1), 12000);
     </script>
   </body>
 </html>

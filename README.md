@@ -18,7 +18,9 @@
   </p>
 </div>
 
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/图灵大学宣传片.MOV" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
+<p align="center">
+  <a href="https://ffcosmos.github.io/TuringUnion/"><strong>Watch the TuringUnion promotional film and featured demos →</strong></a>
+</p>
 
 ---
 
@@ -100,6 +102,8 @@
 
 ### 功能示意视频
 
+在[视频轮播网站](https://ffcosmos.github.io/TuringUnion/)观看宣传片和精选 Demo，或前往 [videos 文件夹](https://github.com/ffcosmos/TuringUnion/tree/main/videos)查看全部视频。
+
 #### 对话式画像建模 / Conversational Learner Profiling
 
 <video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
@@ -108,17 +112,9 @@
 
 <video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/personalized-path.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
-#### 多智能体导师团 / Multi-Agent Mentor Team
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
 #### 交互式动态课堂 / Interactive Dynamic Classroom
 
 <video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
-#### 企业级项目实训 / Enterprise-Level Project Training
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/enterprise-project.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 <a id="evaluation"></a>
 
@@ -285,6 +281,8 @@ Enterprise-level project training connects learning with real industry needs. Th
 
 ### Demo Videos
 
+Watch the promotional film and featured demos on the [video carousel site](https://ffcosmos.github.io/TuringUnion/), or browse all files in the [videos folder](https://github.com/ffcosmos/TuringUnion/tree/main/videos).
+
 #### Conversational Learner Profiling
 
 <video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/user-profile-modeling.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
@@ -293,17 +291,9 @@ Enterprise-level project training connects learning with real industry needs. Th
 
 <video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/personalized-path.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
-#### Multi-Agent Mentor Team
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/multi-agent-mentors.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
 #### Interactive Dynamic Classroom
 
 <video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/dynamic-classroom.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
-
-#### Enterprise-Level Project Training
-
-<video src="https://github.com/ffcosmos/TuringUnion/raw/refs/heads/main/videos/enterprise-project.mp4" autoplay muted loop playsinline controls preload="auto" width="100%"></video>
 
 ### Evaluation
 
