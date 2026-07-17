@@ -408,18 +408,6 @@
         </div>
       </section>
 
-      <section class="cta-section">
-        <div class="shell">
-          <div class="cta-card" data-reveal>
-            <div>
-              <p class="section-kicker" data-i18n="ctaKicker">Your path starts here</p>
-              <h2 data-i18n="ctaTitle">Move toward the future you care about.</h2>
-              <p data-i18n="ctaCopy">Tell us where you want to go. TuringUnion will help you understand the gap, build the path, and prove what you can do.</p>
-            </div>
-            <a class="button button-primary" href="https://www.turingu.cn" data-i18n="ctaButton">Start Your Journey ↗</a>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer>
@@ -448,10 +436,6 @@
           galleryKicker: "Explore the system",
           galleryTitle: "Learning, orchestrated around you.",
           galleryDescription: "See how TuringUnion moves from understanding who you are to building real capability through mentors, classrooms, and projects.",
-          ctaKicker: "Your path starts here",
-          ctaTitle: "Move toward the future you care about.",
-          ctaCopy: "Tell us where you want to go. TuringUnion will help you understand the gap, build the path, and prove what you can do.",
-          ctaButton: "Start Your Journey ↗",
           footerTagline: "One Learner, One University.",
           playing: "Playing",
           play: "Play",
@@ -470,10 +454,6 @@
           galleryKicker: "探索系统",
           galleryTitle: "让学习围绕你动态组织。",
           galleryDescription: "从理解你是谁，到通过导师、课堂和项目形成真实能力，了解图灵学社如何组织完整培养过程。",
-          ctaKicker: "你的路径从这里开始",
-          ctaTitle: "走向你真正关心的未来。",
-          ctaCopy: "告诉我们你想去哪里。图灵学社会帮助你理解差距、建立路径，并证明你真正能够做到什么。",
-          ctaButton: "开启学习旅程 ↗",
           footerTagline: "一人一大学。",
           playing: "播放中",
           play: "播放",
@@ -541,7 +521,7 @@
 
       function playFilm() {
         if (!filmLoaded) {
-          filmVideo.src = "videos/turingunion-promo.mp4";
+          filmVideo.src = "videos/图灵大学宣传片.MOV";
           filmLoaded = true;
         }
         filmPoster.hidden = true;
@@ -607,6 +587,13 @@
 
       document.querySelector("#watch-film").addEventListener("click", playFilm);
       filmOverlay.addEventListener("click", playFilm);
+      filmVideo.addEventListener("error", () => {
+        if (filmVideo.dataset.fallback === "true") return;
+        filmVideo.dataset.fallback = "true";
+        filmVideo.src = "videos/turingunion-promo.mp4";
+        filmVideo.load();
+        filmVideo.play().catch(() => {});
+      });
       document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language)));
 
       const revealElements = document.querySelectorAll("[data-reveal]");
