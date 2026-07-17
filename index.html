@@ -235,11 +235,6 @@
       }
       .gallery-player { position: relative; overflow: hidden; border-radius: 22px; background: #07152e; }
       .gallery-player video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #07152e; }
-      .gallery-caption { position: absolute; left: 18px; right: 18px; bottom: 18px; display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; pointer-events: none; }
-      .gallery-caption-text { padding: 13px 16px; border: 1px solid rgba(255,255,255,0.24); border-radius: 15px; color: white; background: rgba(4, 19, 50, 0.74); backdrop-filter: blur(12px); }
-      .gallery-caption h3 { margin: 0; font-size: clamp(1rem, 2vw, 1.35rem); }
-      .gallery-caption p { margin: 4px 0 0; color: #d6e7ff; font-size: 0.88rem; }
-      .gallery-counter { padding: 8px 11px; border-radius: 999px; color: white; background: rgba(4, 19, 50, 0.72); font-size: 0.78rem; font-weight: 800; }
 
       .video-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
       .video-tab {
@@ -395,13 +390,6 @@
           <div class="gallery-shell" data-reveal>
             <div class="gallery-player">
               <video id="gallery-video" muted loop playsinline controls preload="metadata" poster="img/site/user-profile.jpg"></video>
-              <div class="gallery-caption">
-                <div class="gallery-caption-text">
-                  <h3 id="gallery-title"></h3>
-                  <p id="gallery-description"></p>
-                </div>
-                <span class="gallery-counter" id="gallery-counter"></span>
-              </div>
             </div>
             <div class="video-tabs" id="video-tabs" aria-label="Featured demo videos"></div>
           </div>
@@ -503,9 +491,6 @@
       const filmPoster = document.querySelector("#film-poster");
       const filmOverlay = document.querySelector("#film-overlay");
       const galleryVideo = document.querySelector("#gallery-video");
-      const galleryTitle = document.querySelector("#gallery-title");
-      const galleryDescription = document.querySelector("#gallery-description");
-      const galleryCounter = document.querySelector("#gallery-counter");
       const videoTabs = document.querySelector("#video-tabs");
       function readStoredLanguage() {
         try {
@@ -560,9 +545,6 @@
           galleryVideo.dataset.index = String(index);
           galleryVideo.load();
         }
-        galleryTitle.textContent = video.title[language];
-        galleryDescription.textContent = video.description[language];
-        galleryCounter.textContent = `${String(index + 1).padStart(2, "0")} / ${String(videos.length).padStart(2, "0")}`;
         renderTabs();
         if (shouldPlay) galleryVideo.play().catch(() => {});
       }
