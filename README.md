@@ -15,14 +15,6 @@
   <a href="https://ffcosmos.github.io/TuringUnion/"><strong>Watch the TuringUnion promotional film and featured demos →</strong></a>
 </p>
 
----
-
-## 📣 What's New
-
-- **2026-07-18**: TuringUnion will be released at WAIC.
-
----
-
 ### 🎓 Overview
 
 TuringUnion is a multi-agent autonomous education engine for personalized learning in the AI era. It follows the principle of “one learner, one university” and builds a personalized cultivation loop through learner profiling, path planning, multi-agent mentoring, dynamic classroom generation, and enterprise-level project training.
