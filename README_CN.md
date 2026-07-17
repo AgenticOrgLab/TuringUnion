@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="./img/logo-symbol-fancy.png" alt="TuringUnion logo symbol" width="120" />
-  <h1><img src="./img/logo-mascot-fancy.png" alt="TuringUnion mascot" height="42" style="vertical-align: -4px;" /> 图灵学社 TuringUnion</h1>
+  <img src="./img/logo-symbol.png" alt="TuringUnion logo symbol" width="120" />
+  <h1><img src="./img/logo-mascot.png" alt="TuringUnion mascot" height="42" style="vertical-align: -4px;" /> 图灵学社 TuringUnion</h1>
   <p><strong>One Learner, One University.</strong></p>
   <p>
     <a href="https://www.turingu.cn"><img alt="大学官网" src="https://img.shields.io/badge/大学官网-turingu.cn-009688?style=flat-square"></a>
@@ -51,7 +51,7 @@
 图灵学社采用“智能认知—智能培养—智能验证”的三段式框架。系统首先将学习者目标、能力、反馈和任务约束建模为动态人类节点，再通过个性化培养方案、多智能体导师团和交互式动态课堂组织学习过程，最后以企业级项目实训和学习证据建模验证真实能力，并将结果反馈给路径优化模块。
 
 <p align="center">
-  <img src="./img/method-fancy.png" alt="图灵学社系统框架" width="100%">
+  <img src="./img/method.png" alt="图灵学社系统框架" width="100%">
 </p>
 
 ### 🤖 核心模块

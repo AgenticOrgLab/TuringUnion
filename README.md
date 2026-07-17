@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="./img/logo-symbol-fancy.png" alt="TuringUnion logo symbol" width="120" />
-  <h1><img src="./img/logo-mascot-fancy.png" alt="TuringUnion mascot" height="42" style="vertical-align: -4px;" /> 图灵学社 TuringUnion</h1>
+  <img src="./img/logo-symbol.png" alt="TuringUnion logo symbol" width="120" />
+  <h1><img src="./img/logo-mascot.png" alt="TuringUnion mascot" height="42" style="vertical-align: -4px;" /> 图灵学社 TuringUnion</h1>
   <p><strong>One Learner, One University.</strong></p>
   <p>
     <a href="https://www.turingu.cn"><img alt="University Website" src="https://img.shields.io/badge/University-turingu.cn-009688?style=flat-square"></a>
@@ -49,7 +49,7 @@ Every conversation, answer, exercise, project submission, and feedback signal en
 TuringUnion follows a three-stage framework: intelligent cognition, intelligent cultivation, and intelligent verification. The system first models learner goals, capability estimates, feedback, and task constraints as a dynamic human node. It then organizes learning through personalized cultivation plans, multi-agent mentor teams, and interactive dynamic classrooms, and finally validates real capability through enterprise-grade project training and learning evidence modeling.
 
 <p align="center">
-  <img src="./img/method-fancy.png" alt="TuringUnion framework" width="100%">
+  <img src="./img/method.png" alt="TuringUnion framework" width="100%">
 </p>
 
 ### 🤖 Core Modules
