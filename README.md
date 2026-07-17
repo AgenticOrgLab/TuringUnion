@@ -89,7 +89,7 @@ TuringUnion has completed an initial real-user test with 22 learners across unde
 #### 📈 Learning Outcome
 
 <p align="center">
-  <img src="./img/outcome-fancy.png" alt="Learning outcome evaluation" width="100%">
+  <img src="./img/outcome.jpg" alt="Learning outcome evaluation" width="100%">
 </p>
 
 Preliminary results show:
@@ -101,7 +101,7 @@ Preliminary results show:
 #### 🔄 Process Validation
 
 <p align="center">
-  <img src="./img/process-fancy.png" alt="Learning process validation" width="100%">
+  <img src="./img/process.jpg" alt="Learning process validation" width="100%">
 </p>
 
 The test provides initial validation for the “test—learn—test—practice” loop. The system can adjust learning paths based on testing and learning behavior, while accumulating traceable growth records.
@@ -115,7 +115,7 @@ The test provides initial validation for the “test—learn—test—practice�
 TU0024 represents a beginner learner with limited AI and product experience but strong willingness to learn. TuringUnion starts with a clear path, structured courses, and enterprise-level practice to build foundational capability and deliver measurable progress.
 
 <p align="center">
-  <img src="./img/新手探索-fancy.png" alt="TU0024 beginner exploration case study" width="100%">
+  <img src="./img/beginner.jpg" alt="TU0024 beginner exploration case study" width="100%">
 </p>
 
 #### Advanced Research Profile
@@ -123,7 +123,7 @@ TU0024 represents a beginner learner with limited AI and product experience but 
 TU013 represents an advanced learner with research foundations and prior AI project experience. TuringUnion fills knowledge gaps around the learner’s research goals and supports deeper practice through multi-agent collaboration and quantitative evaluation.
 
 <p align="center">
-  <img src="./img/进阶研究-fancy.png" alt="TU013 advanced research case study" width="100%">
+  <img src="./img/advanced%20researcher.jpg" alt="TU013 advanced research case study" width="100%">
 </p>
 
 #### Cross-Case Comparison
@@ -131,7 +131,7 @@ TU013 represents an advanced learner with research foundations and prior AI proj
 The two learners started from different baselines, yet both reached scores above 84 after learning. The beginner learner improved by 45.0 points, while the advanced learner improved by 24.5 points, indicating that the system adapts cultivation to different learner profiles.
 
 <p align="center">
-  <img src="./img/case对比图-fancy.png" alt="Before and after case study comparison" width="100%">
+  <img src="./img/comparison.jpg" alt="Before and after case study comparison" width="100%">
 </p>
 
 ### 🚀 Application Value
