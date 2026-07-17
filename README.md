@@ -84,8 +84,6 @@ Watch the promotional film and featured demos on the [video carousel site](https
 
 Participants: 22 undergraduate, master’s, and doctoral learners with some AI learning background but generally limited product analysis experience. Their learning goal was to grow into multi-agent product analysts.
 
-TuringUnion has completed an initial real-user test with 22 learners across undergraduate, master’s, and doctoral stages.
-
 #### 📈 Learning Outcome
 
 <p align="center">
