@@ -3,184 +3,629 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TuringUnion Demo Videos</title>
+    <meta name="theme-color" content="#f5f2ea" />
+    <meta
+      name="description"
+      content="TuringUnion is a multi-agent autonomous education engine for personalized learning."
+    />
+    <title>TuringUnion | One Learner, One University</title>
     <style>
       :root {
-        color-scheme: dark;
+        color-scheme: light;
         font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #071426;
-        color: #f4f8ff;
+        color: #081b3d;
+        background: #f5f2ea;
+        --ink: #081b3d;
+        --muted: #536786;
+        --paper: rgba(255, 253, 247, 0.9);
+        --paper-solid: #fffdf7;
+        --blue: #2454dc;
+        --blue-dark: #17389c;
+        --cyan: #18b5d1;
+        --line: rgba(31, 76, 162, 0.17);
+        --shadow: 0 24px 70px rgba(19, 55, 117, 0.14);
       }
 
       * { box-sizing: border-box; }
-
+      html { scroll-behavior: smooth; }
       body {
         margin: 0;
+        min-width: 320px;
         min-height: 100vh;
-        background: radial-gradient(circle at top, #123b68 0, #071426 55%, #040a13 100%);
+        overflow-x: hidden;
+        background:
+          radial-gradient(circle at 14% 7%, rgba(83, 130, 244, 0.14), transparent 28rem),
+          radial-gradient(circle at 88% 24%, rgba(35, 190, 211, 0.11), transparent 26rem),
+          linear-gradient(180deg, #f9f6ef 0%, #eef5ff 50%, #f9f7f0 100%);
       }
 
-      .page {
-        width: min(1180px, calc(100% - 32px));
-        margin: 0 auto;
-        padding: 28px 0 48px;
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.26;
+        background-image:
+          repeating-linear-gradient(0deg, rgba(21, 55, 106, 0.025) 0, rgba(21, 55, 106, 0.025) 1px, transparent 1px, transparent 4px),
+          repeating-linear-gradient(90deg, rgba(21, 55, 106, 0.018) 0, rgba(21, 55, 106, 0.018) 1px, transparent 1px, transparent 5px);
+        mix-blend-mode: multiply;
       }
 
-      .brand {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 28px;
+      img, video { max-width: 100%; }
+      button, a { -webkit-tap-highlight-color: transparent; }
+      a { color: inherit; }
+
+      .shell { width: min(1200px, calc(100% - 40px)); margin: 0 auto; }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        padding: 14px 0;
+        backdrop-filter: blur(18px);
+        background: rgba(249, 246, 239, 0.76);
+        border-bottom: 1px solid rgba(31, 76, 162, 0.08);
       }
 
-      .brand-symbol { width: 68px; height: 62px; object-fit: contain; }
-      .brand-mascot { width: 58px; height: 72px; object-fit: contain; }
-      h1 { margin: 0; font-size: clamp(1.7rem, 4vw, 3rem); letter-spacing: -0.04em; }
-      .subtitle { margin: 5px 0 0; color: #a9c5e8; }
+      .nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+      .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
+      .brand-symbol { width: 38px; height: 36px; object-fit: contain; }
+      .brand-name { font-size: 0.98rem; font-weight: 800; letter-spacing: 0.12em; }
+      .nav-actions { display: flex; align-items: center; gap: 10px; }
 
-      .stage {
-        overflow: hidden;
-        border: 1px solid rgba(164, 207, 255, 0.22);
-        border-radius: 24px;
-        background: rgba(3, 12, 25, 0.7);
-        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      .language-switcher {
+        display: inline-flex;
+        padding: 3px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.62);
       }
-
-      video {
-        display: block;
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        background: #02060c;
-        object-fit: contain;
-      }
-
-      .caption {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 18px 22px 20px;
-      }
-
-      .caption h2 { margin: 0; font-size: clamp(1.1rem, 2vw, 1.5rem); }
-      .caption p { margin: 5px 0 0; color: #9fb6d3; }
-
-      .controls { display: flex; gap: 8px; }
-      button {
-        width: 42px;
-        height: 42px;
-        border: 1px solid rgba(164, 207, 255, 0.3);
-        border-radius: 50%;
-        background: #12345a;
-        color: white;
+      .language-switcher button {
+        min-width: 40px;
+        padding: 6px 9px;
+        border: 0;
+        border-radius: 999px;
+        color: var(--muted);
+        background: transparent;
         cursor: pointer;
-        font-size: 1.1rem;
+        font: inherit;
+        font-size: 0.78rem;
+        font-weight: 700;
       }
-      button:hover { background: #1d548c; }
+      .language-switcher button.active { color: white; background: var(--blue); box-shadow: 0 5px 14px rgba(36, 84, 220, 0.24); }
 
-      .dots {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 18px;
-      }
-
-      .more {
+      .button {
         display: inline-flex;
         align-items: center;
-        margin-top: 22px;
-        padding: 11px 16px;
-        border: 1px solid rgba(164, 207, 255, 0.3);
+        justify-content: center;
+        gap: 9px;
+        min-height: 46px;
+        padding: 0 20px;
+        border: 1px solid transparent;
         border-radius: 999px;
-        color: #d8ebff;
-        background: rgba(18, 52, 90, 0.75);
         text-decoration: none;
+        font-weight: 750;
+        cursor: pointer;
+        transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
       }
-      .more:hover { background: #1d548c; }
+      .button:hover { transform: translateY(-2px); }
+      .button-primary { color: white; background: linear-gradient(135deg, var(--blue), #3f75ef); box-shadow: 0 14px 30px rgba(36, 84, 220, 0.25); }
+      .button-secondary { color: var(--blue-dark); border-color: rgba(36, 84, 220, 0.24); background: rgba(255, 255, 255, 0.72); }
+      .button-small { min-height: 40px; padding: 0 16px; font-size: 0.86rem; }
 
-      .dot {
-        width: 10px;
-        height: 10px;
-        padding: 0;
-        border: 0;
-        background: #47627f;
+      .hero {
+        position: relative;
+        isolation: isolate;
+        padding: 84px 0 68px;
       }
-      .dot.active { background: #62c8ff; box-shadow: 0 0 14px #62c8ff; }
+      .hero::before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        inset: 0 0 auto;
+        height: 650px;
+        background:
+          linear-gradient(90deg, rgba(249, 246, 239, 0.97) 0%, rgba(249, 246, 239, 0.78) 43%, rgba(249, 246, 239, 0.18) 76%, rgba(249, 246, 239, 0.74) 100%),
+          linear-gradient(180deg, rgba(249, 246, 239, 0.08), #f7f5ef 96%),
+          url("img/site/cosmos-campus.webp") center / cover no-repeat;
+        opacity: 0.82;
+        -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 380px;
+        height: 380px;
+        right: 6%;
+        top: 80px;
+        border-radius: 50%;
+        background: rgba(118, 158, 255, 0.21);
+        filter: blur(70px);
+      }
+
+      .hero-grid { display: grid; grid-template-columns: minmax(0, 0.86fr) minmax(520px, 1.14fr); align-items: center; gap: clamp(42px, 7vw, 90px); }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 18px;
+        padding: 8px 12px;
+        border: 1px solid rgba(36, 84, 220, 0.17);
+        border-radius: 999px;
+        color: var(--blue-dark);
+        background: rgba(255, 255, 255, 0.67);
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .eyebrow::before { content: "✦"; color: var(--cyan); }
+      h1 { margin: 0; max-width: 720px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(3.1rem, 6.8vw, 6.7rem); font-weight: 600; line-height: 0.94; letter-spacing: -0.055em; }
+      .hero-highlight { color: var(--blue); }
+      .hero-copy { max-width: 610px; margin: 24px 0 0; color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.22rem); line-height: 1.75; }
+      .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+      .hero-note { display: flex; align-items: center; gap: 10px; margin: 25px 0 0; color: #62738e; font-size: 0.85rem; }
+      .hero-note::before { content: ""; width: 36px; height: 1px; background: var(--cyan); }
+
+      .film-card {
+        position: relative;
+        overflow: hidden;
+        min-height: 410px;
+        border: 1px solid rgba(45, 92, 183, 0.2);
+        border-radius: 30px;
+        background: var(--paper-solid);
+        box-shadow: var(--shadow);
+        transform: rotate(0.4deg);
+      }
+      .film-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        border-radius: inherit;
+        box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.16);
+      }
+      .film-poster, .film-video { display: block; width: 100%; min-height: 410px; aspect-ratio: 16 / 9; object-fit: cover; background: #07152e; }
+      .film-video[hidden], .film-overlay[hidden] { display: none; }
+      .film-overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        border: 0;
+        color: white;
+        background: linear-gradient(180deg, rgba(4, 19, 50, 0.03), rgba(4, 19, 50, 0.58));
+        cursor: pointer;
+      }
+      .play-icon {
+        display: grid;
+        place-items: center;
+        width: 76px;
+        height: 76px;
+        border: 1px solid rgba(255, 255, 255, 0.65);
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--blue);
+        box-shadow: 0 16px 40px rgba(4, 19, 50, 0.34);
+        font-size: 1.35rem;
+        transition: transform 180ms ease;
+      }
+      .film-overlay:hover .play-icon { transform: scale(1.06); }
+      .film-label { font-weight: 800; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5); }
+      .duration { position: absolute; right: 18px; bottom: 18px; padding: 6px 9px; border-radius: 9px; color: white; background: rgba(4, 19, 50, 0.72); font-size: 0.78rem; font-weight: 750; }
+
+      .section { padding: 76px 0; }
+      .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; margin-bottom: 28px; }
+      .section-kicker { margin: 0 0 8px; color: var(--blue); font-size: 0.78rem; font-weight: 850; letter-spacing: 0.13em; text-transform: uppercase; }
+      h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 4vw, 4rem); font-weight: 600; letter-spacing: -0.04em; }
+      .section-description { max-width: 510px; margin: 0; color: var(--muted); line-height: 1.7; }
+
+      .gallery-shell {
+        padding: 18px;
+        border: 1px solid rgba(31, 76, 162, 0.16);
+        border-radius: 32px;
+        background: rgba(255, 253, 247, 0.76);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(12px);
+      }
+      .gallery-player { position: relative; overflow: hidden; border-radius: 22px; background: #07152e; }
+      .gallery-player video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: contain; background: #07152e; }
+      .gallery-caption { position: absolute; left: 18px; right: 18px; bottom: 18px; display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; pointer-events: none; }
+      .gallery-caption-text { padding: 13px 16px; border: 1px solid rgba(255,255,255,0.24); border-radius: 15px; color: white; background: rgba(4, 19, 50, 0.74); backdrop-filter: blur(12px); }
+      .gallery-caption h3 { margin: 0; font-size: clamp(1rem, 2vw, 1.35rem); }
+      .gallery-caption p { margin: 4px 0 0; color: #d6e7ff; font-size: 0.88rem; }
+      .gallery-counter { padding: 8px 11px; border-radius: 999px; color: white; background: rgba(4, 19, 50, 0.72); font-size: 0.78rem; font-weight: 800; }
+
+      .video-tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-top: 14px; }
+      .video-tab {
+        position: relative;
+        min-width: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid rgba(31, 76, 162, 0.14);
+        border-radius: 17px;
+        text-align: left;
+        color: var(--ink);
+        background: #f8fbff;
+        cursor: pointer;
+        transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+      }
+      .video-tab:hover { transform: translateY(-3px); border-color: rgba(36, 84, 220, 0.42); }
+      .video-tab.active { border-color: var(--blue); box-shadow: 0 10px 25px rgba(36, 84, 220, 0.2); }
+      .video-tab.active::after { content: ""; position: absolute; inset: 0; pointer-events: none; box-shadow: inset 0 0 0 2px var(--blue); border-radius: inherit; }
+      .video-tab img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #dfe9f8; }
+      .video-tab-copy { display: block; min-height: 78px; padding: 12px; }
+      .video-tab-title { display: block; overflow: hidden; font-size: 0.82rem; font-weight: 800; line-height: 1.32; text-overflow: ellipsis; }
+      .video-tab-meta { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; color: var(--muted); font-size: 0.72rem; }
+      .video-tab.active .video-tab-state { color: var(--blue); font-weight: 800; }
+
+      .cta-section { padding: 72px 0 90px; }
+      .cta-card {
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 30px;
+        padding: clamp(30px, 6vw, 62px);
+        border: 1px solid rgba(36, 84, 220, 0.15);
+        border-radius: 32px;
+        background: linear-gradient(135deg, rgba(255, 253, 247, 0.96), rgba(229, 240, 255, 0.93));
+        box-shadow: var(--shadow);
+      }
+      .cta-card::after { content: "✦"; position: absolute; right: 19%; top: -45px; color: rgba(36, 84, 220, 0.08); font-size: 13rem; transform: rotate(16deg); }
+      .cta-card h2 { max-width: 720px; }
+      .cta-card p { max-width: 650px; margin: 14px 0 0; color: var(--muted); line-height: 1.7; }
+
+      footer { border-top: 1px solid rgba(31, 76, 162, 0.12); padding: 28px 0 34px; color: var(--muted); font-size: 0.82rem; }
+      .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+      .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
+      .footer-links a { text-decoration: none; }
+      .footer-links a:hover { color: var(--blue); }
+
+      :focus-visible { outline: 3px solid rgba(24, 181, 209, 0.56); outline-offset: 3px; }
+      [data-reveal] { opacity: 0; transform: translateY(16px); transition: opacity 650ms ease, transform 650ms ease; }
+      [data-reveal].visible { opacity: 1; transform: none; }
+
+      @media (max-width: 960px) {
+        .hero { padding-top: 58px; }
+        .hero-grid { grid-template-columns: 1fr; }
+        .film-card, .film-poster, .film-video { min-height: 0; }
+        .section-heading { align-items: flex-start; flex-direction: column; }
+        .video-tabs { display: flex; overflow-x: auto; padding: 2px 2px 12px; scroll-snap-type: x mandatory; }
+        .video-tab { flex: 0 0 230px; scroll-snap-align: start; }
+        .cta-card { grid-template-columns: 1fr; }
+        .cta-card .button { width: fit-content; }
+      }
 
       @media (max-width: 640px) {
-        .page { width: min(100% - 20px, 1180px); padding-top: 18px; }
-        .brand { gap: 9px; }
-        .brand-symbol { width: 48px; height: 46px; }
-        .brand-mascot { width: 42px; height: 54px; }
-        .caption { align-items: flex-start; flex-direction: column; padding: 15px; }
+        .shell { width: min(100% - 24px, 1200px); }
+        .site-header { padding: 10px 0; }
+        .brand-name { display: none; }
+        .nav-actions { gap: 6px; }
+        .nav-actions > .button { display: none; }
+        .hero { padding: 46px 0 44px; }
+        h1 { font-size: clamp(3rem, 15vw, 4.7rem); }
+        .hero-copy { font-size: 0.98rem; }
+        .hero-actions .button { flex: 1 1 100%; }
+        .film-card { border-radius: 22px; transform: none; }
+        .film-poster, .film-video { aspect-ratio: 16 / 10; }
+        .section { padding: 54px 0; }
+        .gallery-shell { padding: 8px; border-radius: 22px; }
+        .gallery-player { border-radius: 16px; }
+        .gallery-caption { left: 10px; right: 10px; bottom: 10px; }
+        .gallery-caption-text { padding: 10px 12px; }
+        .gallery-caption p { display: none; }
+        .gallery-counter { display: none; }
+        .video-tab { flex-basis: 190px; }
+        .cta-section { padding: 52px 0 64px; }
+        .cta-card { border-radius: 24px; }
+        .footer-inner { align-items: flex-start; flex-direction: column; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+        *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+        [data-reveal] { opacity: 1; transform: none; }
       }
     </style>
   </head>
   <body>
-    <main class="page">
-      <header class="brand">
-        <img class="brand-symbol" src="img/logo-symbol-fancy.png" alt="TuringUnion logo" />
-        <img class="brand-mascot" src="img/logo-mascot-fancy.png" alt="TuringUnion mascot" />
-        <div>
-          <h1>TuringUnion</h1>
-          <p class="subtitle">One Learner, One University.</p>
-        </div>
-      </header>
-
-      <section class="stage" aria-label="TuringUnion demo video carousel">
-        <video id="player" autoplay muted playsinline controls preload="auto"></video>
-        <div class="caption">
-          <div>
-            <h2 id="title"></h2>
-            <p id="counter"></p>
+    <header class="site-header">
+      <nav class="shell nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="TuringUnion home">
+          <img class="brand-symbol" src="img/logo-symbol-fancy.png" alt="" />
+          <span class="brand-name">TURINGUNION</span>
+        </a>
+        <div class="nav-actions">
+          <div class="language-switcher" aria-label="Language">
+            <button id="language-en" class="active" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button id="language-zh" type="button" data-language="zh" aria-pressed="false">中文</button>
           </div>
-          <div class="controls">
-            <button id="previous" type="button" aria-label="Previous video">‹</button>
-            <button id="next" type="button" aria-label="Next video">›</button>
+          <a class="button button-primary button-small" href="https://www.turingu.cn" data-i18n="enterCampus">Enter Campus ↗</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="shell hero-grid">
+          <div data-reveal>
+            <p class="eyebrow" data-i18n="eyebrow">Multi-Agent Education Engine</p>
+            <h1><span data-i18n="heroLineOne">One Learner.</span><br /><span class="hero-highlight" data-i18n="heroLineTwo">One University.</span></h1>
+            <p class="hero-copy" data-i18n="heroCopy">
+              A personalized university that understands your goals, assembles your mentor team, and turns every learning step into verified capability.
+            </p>
+            <div class="hero-actions">
+              <button class="button button-primary" id="watch-film" type="button"><span aria-hidden="true">▶</span><span data-i18n="watchFilm">Watch the Film</span></button>
+              <a class="button button-secondary" href="https://www.turingu.cn" data-i18n="enterCampusLong">Enter TuringUnion Campus ↗</a>
+            </div>
+            <p class="hero-note" data-i18n="heroNote">From learner profiling to enterprise-level practice</p>
+          </div>
+
+          <div class="film-card" id="film-card" data-reveal>
+            <img class="film-poster" id="film-poster" src="img/site/promo.webp" alt="TuringUnion promotional film poster" />
+            <video class="film-video" id="film-video" controls playsinline preload="none" hidden></video>
+            <button class="film-overlay" id="film-overlay" type="button" aria-label="Play TuringUnion promotional film">
+              <span class="play-icon" aria-hidden="true">▶</span>
+              <span class="film-label" data-i18n="filmLabel">TuringUnion Promotional Film</span>
+            </button>
+            <span class="duration">01:23</span>
           </div>
         </div>
       </section>
-      <nav id="dots" class="dots" aria-label="Choose a demo video"></nav>
-      <a class="more" href="https://github.com/ffcosmos/TuringUnion/tree/main/videos">View all videos on GitHub →</a>
+
+      <section class="section" id="demos">
+        <div class="shell">
+          <div class="section-heading" data-reveal>
+            <div>
+              <p class="section-kicker" data-i18n="galleryKicker">Explore the system</p>
+              <h2 data-i18n="galleryTitle">Learning, orchestrated around you.</h2>
+            </div>
+            <p class="section-description" data-i18n="galleryDescription">
+              See how TuringUnion moves from understanding who you are to building real capability through mentors, classrooms, and projects.
+            </p>
+          </div>
+
+          <div class="gallery-shell" data-reveal>
+            <div class="gallery-player">
+              <video id="gallery-video" muted loop playsinline controls preload="metadata" poster="img/site/user-profile.webp"></video>
+              <div class="gallery-caption">
+                <div class="gallery-caption-text">
+                  <h3 id="gallery-title"></h3>
+                  <p id="gallery-description"></p>
+                </div>
+                <span class="gallery-counter" id="gallery-counter"></span>
+              </div>
+            </div>
+            <div class="video-tabs" id="video-tabs" aria-label="Featured demo videos"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="shell">
+          <div class="cta-card" data-reveal>
+            <div>
+              <p class="section-kicker" data-i18n="ctaKicker">Your path starts here</p>
+              <h2 data-i18n="ctaTitle">Move toward the future you care about.</h2>
+              <p data-i18n="ctaCopy">Tell us where you want to go. TuringUnion will help you understand the gap, build the path, and prove what you can do.</p>
+            </div>
+            <a class="button button-primary" href="https://www.turingu.cn" data-i18n="ctaButton">Start Your Journey ↗</a>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <script>
-      const videos = [
-        ["TuringUnion Promotional Film", "videos/turingunion-promo.mp4"],
-        ["Conversational Learner Profiling", "videos/user-profile-modeling.mp4"],
-        ["Personalized Cultivation Plan", "videos/personalized-path.mp4"],
-        ["Interactive Dynamic Classroom", "videos/dynamic-classroom.mp4"]
-      ];
-      const player = document.querySelector("#player");
-      const title = document.querySelector("#title");
-      const counter = document.querySelector("#counter");
-      const dots = document.querySelector("#dots");
-      let current = 0;
+    <footer>
+      <div class="shell footer-inner">
+        <span>© 2026 TuringUnion · <span data-i18n="footerTagline">One Learner, One University.</span></span>
+        <div class="footer-links">
+          <a href="https://github.com/AgenticOrgLab/TuringUnion">GitHub ↗</a>
+          <a href="mailto:qianc62@gmail.com">qianc62@gmail.com</a>
+          <a href="mailto:aohan510@gmail.com">aohan510@gmail.com</a>
+        </div>
+      </div>
+    </footer>
 
-      function showVideo(index) {
-        current = (index + videos.length) % videos.length;
-        const [name, source] = videos[current];
-        player.src = source;
-        player.load();
-        player.play().catch(() => {});
-        title.textContent = name;
-        counter.textContent = `${current + 1} / ${videos.length}`;
-        [...dots.children].forEach((dot, dotIndex) => dot.classList.toggle("active", dotIndex === current));
+    <script>
+      const copy = {
+        en: {
+          enterCampus: "Enter Campus ↗",
+          eyebrow: "Multi-Agent Education Engine",
+          heroLineOne: "One Learner.",
+          heroLineTwo: "One University.",
+          heroCopy: "A personalized university that understands your goals, assembles your mentor team, and turns every learning step into verified capability.",
+          watchFilm: "Watch the Film",
+          enterCampusLong: "Enter TuringUnion Campus ↗",
+          heroNote: "From learner profiling to enterprise-level practice",
+          filmLabel: "TuringUnion Promotional Film",
+          galleryKicker: "Explore the system",
+          galleryTitle: "Learning, orchestrated around you.",
+          galleryDescription: "See how TuringUnion moves from understanding who you are to building real capability through mentors, classrooms, and projects.",
+          ctaKicker: "Your path starts here",
+          ctaTitle: "Move toward the future you care about.",
+          ctaCopy: "Tell us where you want to go. TuringUnion will help you understand the gap, build the path, and prove what you can do.",
+          ctaButton: "Start Your Journey ↗",
+          footerTagline: "One Learner, One University.",
+          playing: "Playing",
+          play: "Play",
+          filmAria: "Play TuringUnion promotional film"
+        },
+        zh: {
+          enterCampus: "进入校园 ↗",
+          eyebrow: "多智能体自治教育引擎",
+          heroLineOne: "一人。",
+          heroLineTwo: "一大学。",
+          heroCopy: "一所真正围绕你运转的个性化大学：理解你的目标，组建你的导师团队，让每一步学习都沉淀为可验证的真实能力。",
+          watchFilm: "观看宣传片",
+          enterCampusLong: "进入图灵学社校园 ↗",
+          heroNote: "从学习者画像到企业级项目实训",
+          filmLabel: "图灵学社宣传片",
+          galleryKicker: "探索系统",
+          galleryTitle: "让学习围绕你动态组织。",
+          galleryDescription: "从理解你是谁，到通过导师、课堂和项目形成真实能力，了解图灵学社如何组织完整培养过程。",
+          ctaKicker: "你的路径从这里开始",
+          ctaTitle: "走向你真正关心的未来。",
+          ctaCopy: "告诉我们你想去哪里。图灵学社会帮助你理解差距、建立路径，并证明你真正能够做到什么。",
+          ctaButton: "开启学习旅程 ↗",
+          footerTagline: "一人一大学。",
+          playing: "播放中",
+          play: "播放",
+          filmAria: "播放图灵学社宣传片"
+        }
+      };
+
+      const videos = [
+        {
+          src: "videos/user-profile-modeling.mp4",
+          poster: "img/site/user-profile.webp",
+          duration: "00:12",
+          title: { en: "Conversational Learner Profiling", zh: "对话式学习者画像" },
+          description: { en: "Understand goals, foundations, gaps, and preferences through dialogue.", zh: "通过对话理解目标、基础、能力差距与学习偏好。" }
+        },
+        {
+          src: "videos/personalized-path.mp4",
+          poster: "img/site/personalized-path.webp",
+          duration: "00:05",
+          title: { en: "Personalized Cultivation Plan", zh: "个性化培养方案" },
+          description: { en: "Turn learner evidence into a staged, adaptive growth path.", zh: "将学习证据转化为阶段化、可动态调整的成长路径。" }
+        },
+        {
+          src: "videos/multi-agent-mentors.mp4",
+          poster: "img/site/multi-agent-mentors.webp",
+          duration: "00:09",
+          title: { en: "Multi-Agent Mentor Team", zh: "多智能体导师团" },
+          description: { en: "Route every learning task to the mentor best suited to help.", zh: "根据学习任务调度最合适的智能体导师协同支持。" }
+        },
+        {
+          src: "videos/dynamic-classroom.mp4",
+          poster: "img/site/dynamic-classroom.webp",
+          duration: "00:14",
+          title: { en: "Interactive Dynamic Classroom", zh: "交互式动态课堂" },
+          description: { en: "Generate teaching around live questions, feedback, and changing focus.", zh: "围绕实时提问、反馈与关注点动态生成教学内容。" }
+        },
+        {
+          src: "videos/enterprise-project.mp4",
+          poster: "img/site/enterprise-project.webp",
+          duration: "00:07",
+          title: { en: "Enterprise-Level Project Training", zh: "企业级项目实训" },
+          description: { en: "Build, review, and validate capability through real project delivery.", zh: "通过真实项目交付、评审与反馈验证实际能力。" }
+        }
+      ];
+
+      const filmVideo = document.querySelector("#film-video");
+      const filmPoster = document.querySelector("#film-poster");
+      const filmOverlay = document.querySelector("#film-overlay");
+      const galleryVideo = document.querySelector("#gallery-video");
+      const galleryTitle = document.querySelector("#gallery-title");
+      const galleryDescription = document.querySelector("#gallery-description");
+      const galleryCounter = document.querySelector("#gallery-counter");
+      const videoTabs = document.querySelector("#video-tabs");
+      function readStoredLanguage() {
+        try {
+          return localStorage.getItem("turingunion-language") === "zh" ? "zh" : "en";
+        } catch {
+          return "en";
+        }
       }
 
-      videos.forEach((_, index) => {
-        const dot = document.createElement("button");
-        dot.className = "dot";
-        dot.type = "button";
-        dot.setAttribute("aria-label", `Show video ${index + 1}`);
-        dot.addEventListener("click", () => showVideo(index));
-        dots.appendChild(dot);
-      });
+      let language = readStoredLanguage();
+      let activeVideo = 0;
+      let filmLoaded = false;
 
-      document.querySelector("#previous").addEventListener("click", () => showVideo(current - 1));
-      document.querySelector("#next").addEventListener("click", () => showVideo(current + 1));
-      player.addEventListener("ended", () => showVideo(current + 1));
-      showVideo(0);
+      function playFilm() {
+        if (!filmLoaded) {
+          filmVideo.src = "videos/turingunion-promo.mp4";
+          filmLoaded = true;
+        }
+        filmPoster.hidden = true;
+        filmOverlay.hidden = true;
+        filmVideo.hidden = false;
+        filmVideo.play().catch(() => {});
+        document.querySelector("#film-card").scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+
+      function renderTabs() {
+        videoTabs.replaceChildren();
+        videos.forEach((video, index) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = `video-tab${index === activeVideo ? " active" : ""}`;
+          button.setAttribute("aria-pressed", String(index === activeVideo));
+          button.setAttribute("aria-label", `${copy[language].play}: ${video.title[language]}`);
+          button.innerHTML = `
+            <img src="${video.poster}" alt="" loading="lazy" />
+            <span class="video-tab-copy">
+              <span class="video-tab-title">${video.title[language]}</span>
+              <span class="video-tab-meta"><span class="video-tab-state">${index === activeVideo ? copy[language].playing : copy[language].play}</span><span>${video.duration}</span></span>
+            </span>`;
+          button.addEventListener("click", () => selectVideo(index, true));
+          videoTabs.appendChild(button);
+        });
+      }
+
+      function selectVideo(index, shouldPlay = false) {
+        activeVideo = index;
+        const video = videos[index];
+        if (galleryVideo.dataset.index !== String(index)) {
+          galleryVideo.pause();
+          galleryVideo.src = video.src;
+          galleryVideo.poster = video.poster;
+          galleryVideo.dataset.index = String(index);
+          galleryVideo.load();
+        }
+        galleryTitle.textContent = video.title[language];
+        galleryDescription.textContent = video.description[language];
+        galleryCounter.textContent = `${String(index + 1).padStart(2, "0")} / ${String(videos.length).padStart(2, "0")}`;
+        renderTabs();
+        if (shouldPlay) galleryVideo.play().catch(() => {});
+      }
+
+      function setLanguage(nextLanguage) {
+        language = nextLanguage;
+        try {
+          localStorage.setItem("turingunion-language", language);
+        } catch {}
+        document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+        document.querySelectorAll("[data-i18n]").forEach((element) => {
+          element.textContent = copy[language][element.dataset.i18n];
+        });
+        document.querySelectorAll("[data-language]").forEach((button) => {
+          const active = button.dataset.language === language;
+          button.classList.toggle("active", active);
+          button.setAttribute("aria-pressed", String(active));
+        });
+        filmOverlay.setAttribute("aria-label", copy[language].filmAria);
+        selectVideo(activeVideo, false);
+      }
+
+      document.querySelector("#watch-film").addEventListener("click", playFilm);
+      filmOverlay.addEventListener("click", playFilm);
+      document.querySelectorAll("[data-language]").forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.language)));
+
+      const revealElements = document.querySelectorAll("[data-reveal]");
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.14 });
+        revealElements.forEach((element) => observer.observe(element));
+      } else {
+        revealElements.forEach((element) => element.classList.add("visible"));
+      }
+
+      selectVideo(0, false);
+      setLanguage(language);
     </script>
   </body>
 </html>
