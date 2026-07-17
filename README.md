@@ -151,6 +151,7 @@ TuringUnion targets personalized talent cultivation, AI education platforms, ent
   <a href="https://github.com/turingw1"><img src="https://github.com/turingw1.png?size=96" width="72" alt="turingw1" /></a>
   <a href="https://github.com/Deep-Octopus"><img src="https://github.com/Deep-Octopus.png?size=96" width="72" alt="Deep-Octopus" /></a>
   <a href="https://github.com/warmazxy-maker"><img src="https://github.com/warmazxy-maker.png?size=96" width="72" alt="warmazxy-maker" /></a>
+  <a href="https://github.com/Qianc62"><img src="https://github.com/Qianc62.png?size=96" width="72" alt="Qianc62" /></a>
 </p>
 
 ## 📬 Contact
