@@ -147,12 +147,12 @@ TuringUnion targets personalized talent cultivation, AI education platforms, ent
   <a href="https://github.com/lonelyness1"><img src="https://github.com/lonelyness1.png?size=96" width="72" alt="lonelyness1" /></a>
   <a href="https://github.com/WilsonWukz"><img src="https://github.com/WilsonWukz.png?size=96" width="72" alt="WilsonWukz" /></a>
   <a href="https://github.com/TL-Z"><img src="https://github.com/TL-Z.png?size=96" width="72" alt="TL-Z" /></a>
-  <a href="https://github.com/RedRoman"><img src="https://github.com/RedRoman.png?size=96" width="72" alt="RedRoman" /></a>
-  <a href="https://github.com/Deep-Octopus"><img src="https://github.com/Deep-Octopus.png?size=96" width="72" alt="Deep-Octopus" /></a>
-  <a href="https://github.com/turingw1"><img src="https://github.com/turingw1.png?size=96" width="72" alt="turingw1" /></a>
-  <a href="https://github.com/yixuanzhou823-droid"><img src="https://github.com/yixuanzhou823-droid.png?size=96" width="72" alt="yixuanzhou823-droid" /></a>
-  <a href="https://github.com/xdedmyyds"><img src="https://github.com/xdedmyyds.png?size=96" width="72" alt="xdedmyyds" /></a>
   <a href="https://github.com/hendrick-wang"><img src="https://github.com/hendrick-wang.png?size=96" width="72" alt="hendrick-wang" /></a>
+  <a href="https://github.com/RedRoman"><img src="https://github.com/RedRoman.png?size=96" width="72" alt="RedRoman" /></a>
+  <a href="https://github.com/xdedmyyds"><img src="https://github.com/xdedmyyds.png?size=96" width="72" alt="xdedmyyds" /></a>
+  <a href="https://github.com/turingw1"><img src="https://github.com/turingw1.png?size=96" width="72" alt="turingw1" /></a>
+  <a href="https://github.com/Deep-Octopus"><img src="https://github.com/Deep-Octopus.png?size=96" width="72" alt="Deep-Octopus" /></a>
+  <a href="https://github.com/warmazxy-maker"><img src="https://github.com/warmazxy-maker.png?size=96" width="72" alt="warmazxy-maker" /></a>
 </p>
 
 ## 📬 Contact
