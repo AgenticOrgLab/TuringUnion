@@ -4,7 +4,7 @@
   <p><strong>One Learner, One University.</strong></p>
   <p>
     <a href="https://www.turingu.cn"><img alt="University Website" src="https://img.shields.io/badge/University-turingu.cn-009688?style=flat-square"></a>
-    <a href="https://ffcosmos.github.io/TuringUnion/"><img alt="Demo Videos" src="https://img.shields.io/badge/Demo-Watch%20Videos-4c6fff?style=flat-square"></a>
+    <a href="https://agenticorglab.github.io/TuringUnion/"><img alt="Demo Videos" src="https://img.shields.io/badge/Demo-Watch%20Videos-4c6fff?style=flat-square"></a>
   </p>
   <p>
     <strong>English</strong> | <a href="./README_CN.md">中文</a>
@@ -12,7 +12,7 @@
 </div>
 
 <p align="center">
-  <a href="https://ffcosmos.github.io/TuringUnion/"><strong>Watch the TuringUnion promotional film and featured demos →</strong></a>
+  <a href="https://agenticorglab.github.io/TuringUnion/"><strong>Watch the TuringUnion promotional film and featured demos →</strong></a>
 </p>
 
 ### 🎓 Overview
@@ -78,7 +78,7 @@ Enterprise-level project training connects learning with real industry needs. Th
 
 ### 🎬 Demo Videos
 
-Watch the promotional film and featured demos on the [video carousel site](https://ffcosmos.github.io/TuringUnion/), or browse all files in the [videos folder](https://github.com/ffcosmos/TuringUnion/tree/main/videos).
+Watch the promotional film and featured demos on the [video carousel site](https://agenticorglab.github.io/TuringUnion/), or browse all files in the [videos folder](https://github.com/AgenticOrgLab/TuringUnion/tree/main/videos).
 
 ### 📊 Evaluation
 

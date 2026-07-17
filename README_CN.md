@@ -4,7 +4,7 @@
   <p><strong>One Learner, One University.</strong></p>
   <p>
     <a href="https://www.turingu.cn"><img alt="大学官网" src="https://img.shields.io/badge/大学官网-turingu.cn-009688?style=flat-square"></a>
-    <a href="https://ffcosmos.github.io/TuringUnion/"><img alt="演示视频" src="https://img.shields.io/badge/演示-观看视频-4c6fff?style=flat-square"></a>
+    <a href="https://agenticorglab.github.io/TuringUnion/"><img alt="演示视频" src="https://img.shields.io/badge/演示-观看视频-4c6fff?style=flat-square"></a>
   </p>
   <p>
     <a href="./README.md">English</a> | <strong>中文</strong>
@@ -12,7 +12,7 @@
 </div>
 
 <p align="center">
-  <a href="https://ffcosmos.github.io/TuringUnion/"><strong>观看图灵学社宣传片与精选演示 →</strong></a>
+  <a href="https://agenticorglab.github.io/TuringUnion/"><strong>观看图灵学社宣传片与精选演示 →</strong></a>
 </p>
 
 ### 🎓 项目概述
@@ -82,7 +82,7 @@
 
 ### 🎬 功能示意视频
 
-在[视频轮播网站](https://ffcosmos.github.io/TuringUnion/)观看宣传片和精选 Demo，或前往 [videos 文件夹](https://github.com/ffcosmos/TuringUnion/tree/main/videos)查看全部视频。
+在[视频轮播网站](https://agenticorglab.github.io/TuringUnion/)观看宣传片和精选 Demo，或前往 [videos 文件夹](https://github.com/AgenticOrgLab/TuringUnion/tree/main/videos)查看全部视频。
 
 <a id="evaluation"></a>
 
